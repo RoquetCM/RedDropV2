@@ -18,6 +18,8 @@ TagManager:
   - BarricadaD
   - BarricadaI
   - Caja
+  - Osamabinformiga
+  - Gato
   layers:
   - Default
   - TransparentFX

@@ -38,6 +38,10 @@ public class Hura : MonoBehaviour
     [SerializeField]
     protected GameObject camara;//Como saldra representada la vida el jugador en la pantalla.
 
+    [SerializeField]
+    protected GameObject[] michis;
+
+    protected int gatoBotiquin;
 
     [Space]
     [Space]
@@ -105,7 +109,7 @@ public class Hura : MonoBehaviour
     void Start()
     {
         bloquearParry = false;
-    
+        gatoBotiquin = -1;
 
         CombatManager.instance.SetPermitirMovimiento(false);
         estoyMuerto = false;
@@ -299,6 +303,11 @@ public class Hura : MonoBehaviour
             vida = +100;
             barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
         }
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            vida = -20;
+            barraDeVida.GetComponent<Image>().fillAmount = vida;
+        }
 
         if (estoyMuerto == false)
         {
@@ -317,8 +326,18 @@ public class Hura : MonoBehaviour
             }
            
         }
-       
-     
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (gatoBotiquin >= 0)
+            {
+                michis[gatoBotiquin].SetActive(false);
+
+                gatoBotiquin=gatoBotiquin-1;
+            }
+            
+           
+        }
+
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -345,7 +364,7 @@ public class Hura : MonoBehaviour
         if (other.gameObject.tag == "FormigaCuajada")
         {
             
-            //Hostion(20);
+            Hostion(20);
         }
      
         
@@ -385,8 +404,8 @@ public class Hura : MonoBehaviour
         CombatManager.instance.SetPuederecibirInput(true);
         this.gameObject.transform.GetChild(0).GetComponent<Animator>().SetTrigger("finMamporro");
     }
-    
-    
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "CamaraBloqueada")
@@ -411,9 +430,9 @@ public class Hura : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if(other.gameObject.tag == "FinalDeNivel1")
+        if (other.gameObject.tag == "FinalDeNivel1")
         {
-            
+
             SceneManager.LoadScene("PantallaStart");
         }
 
@@ -429,6 +448,20 @@ public class Hura : MonoBehaviour
             Destroy(other.gameObject);
             barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
             //hay que hacer que cuand ocolisiones con la barricada se desactive el scrip para poder acceder a la lista de los enemigos y mirar cuando se han muerto para poder acctivarse para poder romperla.
+        }
+        if (other.gameObject.tag == "Gato")
+        {
+            gatoBotiquin=gatoBotiquin+1;
+            if (gatoBotiquin <= 2)
+            {
+                michis[gatoBotiquin].SetActive(true);
+                
+            }
+            else
+            {
+                gatoBotiquin = 2;
+            }
+            Destroy(other.gameObject);
         }
     }
     public void Ataque()
