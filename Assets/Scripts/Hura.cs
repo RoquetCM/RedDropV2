@@ -294,6 +294,11 @@ public class Hura : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            vida = +100;
+            barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
+        }
 
         if (estoyMuerto == false)
         {
@@ -340,7 +345,7 @@ public class Hura : MonoBehaviour
         if (other.gameObject.tag == "FormigaCuajada")
         {
             
-            Hostion(20);
+            //Hostion(20);
         }
      
         

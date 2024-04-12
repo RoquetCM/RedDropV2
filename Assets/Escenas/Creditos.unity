@@ -226,7 +226,6 @@ GameObject:
   - component: {fileID: 461246786}
   - component: {fileID: 461246789}
   - component: {fileID: 461246788}
-  - component: {fileID: 461246787}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -241,39 +240,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461246785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4303788, y: 0.4303788, z: 0.4303788}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 920823424}
+  m_Father: {fileID: 801542295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -199, y: -1185}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 112.07568, y: -150.99194}
+  m_SizeDelta: {x: 1920, y: 1080.8633}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &461246787
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461246785}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d1e8ad9c3027b84bb99f511f9cabd25, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &461246788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,29 +272,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "GAME DIRECTORS\r\n\r\nOleguer Soldevila Casas\r\nNerea Alarc\xF3n Tur\r\n\r\nGAME
-    DESIGN\r\n\r\nDaniel Garc\xEDa \xC1lvaro\r\nAlex Bellet Casares\r\n\r\nNARRATIVE
-    LEAD\r\n\r\nGeorgina Castell\xE0 Torrus\r\nAlex Bellet Casares\r\nJose Luis Perez
-    Aza\xF1a\r\n\r\nLEAD DESIGNER \r\n\r\nAlex Bellet Casares\r\n\r\n\r\nENVIRONMENT\r\n\r\nLEAD
-    ARTIST\r\n\r\nLaura Celebrovsky Garc\xEDa \r\n\r\nITEMS ARTIST\r\n\r\nNerea Alarcon
-    Tur\r\nGeorgina Castell\xE0 Torrus\r\nLaura Celebrovsky Garc\xEDa\r\nDaniel Garc\xEDa
-    \xC1lvaro\r\nAlex Bellet Casares\r\n\r\nCONCEPT ARTIST \r\n\r\nOleguer Soldevila
-    Casas\r\n\r\nUSER INTERFACE \r\n\r\nLaura Celebrovsky Garc\xEDa\r\nOleguer Soldevila
-    Casas\r\nGeorgina Castell\xE0 Torrus\r\nDaniel Garc\xEDa \xC1lvaro\r\n\r\nLEAD
-    UI DESIGNER \r\n\r\nOleguer Soldevila Casas\r\n\r\nUI DESIGNERS \r\n\r\nLaura
-    Celebrovsky Garc\xEDa \r\nOleguer Soldevila Casas\r\n\r\nCHARACTER ART\r\nLEAD
-    ARTIST \r\nLaura Celebrovsky Garc\xEDa \r\n\r\nPLAYER MODEL LEAD \r\nOleguer
-    Soldevila Casas\r\n\r\nCONCEPT ARTIST \r\nOleguer Soldevila Casas\r\nLaura Celebrovsky
-    Garc\xEDa \r\n\r\n\r\nANIMATION\r\n\r\nLEAD ARTIST\r\nOleguer Soldevila Casas\r\n\r\nVISUAL
-    EFFECTS \r\nLEAD ARTIST \r\nGeorgina Castell\xE0 Torrus\r\n\r\nMANAGERS \r\nLaura
-    Celebrovsky Garc\xEDa\r\nOleguer Soldevila Casas\r\n\r\nSECONDARY ANIMATION\r\n\r\nLEAD
-    ARTIST \r\nOleguer Soldevila Casas\r\n\r\n\r\nPROGRAMMING\r\n\r\nLEAD PROGRAMMER\r\nAlex
-    Castro Mar\xED\r\n\r\nPROGRAMMERS\r\nJose Luis Perez Aza\xF1a\r\n\r\n\r\nAUDIO\r\n\r\nLEAD
-    COMPOSER\r\n\xBF\xBF\xBF??\r\n\r\nLEAD SOUND DESIGNER\r\n\xBF\xBF\xBF??\r\n\r\nLEAD
-    SOUND PROGRAMMER\r\nAlex Castro Mar\xED \r\n\r\nSOUND PROGRAMMER\r\nJose Lu\xEDs
-    P\xE9rez Aza\xF1a\r\n\r\n\r\n\r\nCINEMATICS\r\n\r\nLEAD ARTIST\r\n\xBF\xBF\xBF??\r\n\r\nARTIST\r\n\xBF\xBF\xBF??\r\n\r\n\r\nPROJECT
-    MANAGEMENT\r\n\r\n?\xBF?\xBF\r\n\r\n\r\n\r\nSPECIAL THANKS TO\r\n\r\nMOM\r\nDAD\r\nMY
-    FAMILY\r\nXAVI\r\nRAMON\r\nNOKOAN\r\nCARRETERO \r\nMELISA\r\nM\xD3NICA\r\nASEPRITE\r\n"
+  m_text: "GAME DIRECTORS\r\n\r\n\n\n\n\n\r\nNARRATIVE\r\n\r\nLEAD NARRATIVE\r\n\r\n\n\r\nNARRATIVE\r\n\r\n\n\n\n\r\nDESIGN\r\n\r\nLEAD
+    DESIGNER \r\n\r\n\n\r\nGAME DESIGN\r\n\r\n\n\n\r\nENVIRONMENT\r\n\r\nLEAD ARTIST\r\n\r\n\n\r\nITEMS
+    ARTIST\r\n\r\n\n\n\n\n\n\r\nCONCEPT ARTIST \r\n\r\n\n\n\r\nUSER INTERFACE \r\n\r\n\n\n\n\n\n\r\nLEAD
+    UI DESIGNER \r\n\r\n\n\r\nUI DESIGNERS \r\n\r\n\n\n\r\nCHARACTER ART\r\n\r\nLEAD
+    ARTIST \r\n\r\n\n\r\nPLAYER MODEL LEAD \r\n\r\n\n\r\nCONCEPT ARTIST \r\n\r\n\n\n\r\nANIMATION\r\n\r\nLEAD
+    ARTIST\r\n\r\n\n\r\nVISUAL EFFECTS \r\n\nLEAD ARTIST \r\n\r\n\n\r\nMANAGERS \r\n\r\n\n\n\r\nSECONDARY
+    ANIMATION\r\n\r\nLEAD ARTIST \r\n\r\n\n\r\nPROGRAMMING\r\n\r\nLEAD PROGRAMMER\r\n\r\n\n\r\nPROGRAMMERS\r\n\r\n\n\n\r\nSECONDARY
+    PROGRAMMERS\r\n\r\n\n\n\r\nAUDIO\r\n\r\nLEAD COMPOSER\r\n\n\r\nLEAD SOUND DESIGNER\r\n\n\r\nLEAD
+    SOUND PROGRAMMER\r\n\n\n\r\nSOUND PROGRAMMER\r\n\n\n\r\nCINEMATICS\r\n\r\nLEAD
+    ARTIST\r\n\n\r\nARTIST\r\n\r\n\r\n\r\nPROJECT MANAGEMENT\r\n\r\n\r\n\r\nSPECIAL
+    THANKS TO\r\n\r\n\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ae89e4cad24c10459ddde643dc8e1f5, type: 2}
   m_sharedMaterial: {fileID: -7011137220791760392, guid: 5ae89e4cad24c10459ddde643dc8e1f5, type: 2}
@@ -343,8 +309,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -487,6 +453,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &801542294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801542295}
+  - component: {fileID: 801542296}
+  - component: {fileID: 801542297}
+  m_Layer: 0
+  m_Name: Texto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801542295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801542294}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -687.1942, y: -857, z: 0}
+  m_LocalScale: {x: 3.4532373, y: 3.4532373, z: 3.4532373}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 461246786}
+  - {fileID: 1231064599}
+  m_Father: {fileID: 920823424}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &801542296
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801542294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9cf25db902d98a45983347e329e99ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &801542297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801542294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deaebb0c5c331f04587200ca4d508a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920823420
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +616,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1552446468}
-  - {fileID: 461246786}
+  - {fileID: 801542295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -590,6 +624,368 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &970149567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970149571}
+  - component: {fileID: 970149570}
+  - component: {fileID: 970149569}
+  - component: {fileID: 970149568}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: finCreditos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &970149568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970149567}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &970149569
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970149567}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &970149570
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970149567}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &970149571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970149567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 241, y: 206, z: -98}
+  m_LocalScale: {x: 6385.283, y: 51.36055, z: 1382.0062}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1175463029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175463030}
+  - component: {fileID: 1175463033}
+  - component: {fileID: 1175463032}
+  - component: {fileID: 1175463031}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175463030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175463029}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 208.1, y: -5320, z: 0}
+  m_LocalScale: {x: 4124.8237, y: 52.72516, z: 1367.2698}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1231064599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1175463031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175463029}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1175463032
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175463029}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1175463033
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175463029}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1231064598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1231064599}
+  - component: {fileID: 1231064602}
+  - component: {fileID: 1231064601}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1231064599
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231064598}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4303788, y: 0.4303788, z: 0.4303788}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1175463030}
+  m_Father: {fileID: 801542295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 112.075714, y: -153.5741}
+  m_SizeDelta: {x: 1920, y: 1080.8633}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1231064601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231064598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\n\r\nOleguer Soldevila Casas\r\nNerea Alarc\xF3n Tur\r\nJose Luis Perez
+    Aza\xF1a\r\nGeorgina Castell\xE0 Torrus\r\n\r\n\n\r\n\nGeorgina Castell\xE0 Torrus\r\n\r\n\n\r\nGeorgina
+    Castell\xE0 Torrus\r\nAlex Bellet Casares\r\nJose Luis Perez Aza\xF1a\r\n\r\n\n\r\n\r\nAlex
+    Bellet Casares\r\n\r\n\n\r\nDaniel Garc\xEDa \xC1lvaro\r\nAlex Bellet Casares\r\n\r\n\n\r\n\n\nLaura
+    Celebrovsky Garc\xEDa \r\n\r\n\nNerea Alarcon Tur\r\nGeorgina Castell\xE0 Torrus\r\nLaura
+    Celebrovsky Garc\xEDa\r\nDaniel Garc\xEDa \xC1lvaro\r\nAlex Bellet Casares\r\n\r\n\n\nOleguer
+    Soldevila Casas\r\nLaura Celebrovsky Garc\xEDa\r\n\r\n\n\r\nNerea Alarcon Tur\r\nLaura
+    Celebrovsky Garc\xEDa\r\nOleguer Soldevila Casas\r\nGeorgina Castell\xE0 Torrus\r\nDaniel
+    Garc\xEDa \xC1lvaro\r\n\r\n\nOleguer Soldevila Casas\r\n\r\n\n\r\nLaura Celebrovsky
+    Garc\xEDa \r\nOleguer Soldevila Casas\r\n\r\n\r\n\r\n \r\n\r\nLaura Celebrovsky
+    Garc\xEDa \r\n\r\n\nOleguer Soldevila Casas\r\n\r\n\n\r\nOleguer Soldevila Casas\r\nLaura
+    Celebrovsky Garc\xEDa \r\n\r\n\n\r\n\n\r\nOleguer Soldevila Casas\r\n\r\n\n\r\n\r\nGeorgina
+    Castell\xE0 Torrus\r\n\r\n\n\r\nLaura Celebrovsky Garc\xEDa\r\nOleguer Soldevila
+    Casas\r\n\r\n\n\r\n\n\r\nOleguer Soldevila Casas\r\n\r\n\n\r\n\nJose Luis Perez
+    Aza\xF1a\r\n\r\n\n\r\nJose Luis Perez Aza\xF1a\r\nAlex Castro Mar\xED\r\n\r\n\n\r\nAlex
+    Bellet Casares\r\nDaniel Garc\xEDa \xC1lvaro\r\n\r\n\n\r\n\n\xBF\xBF\xBF??\r\n\r\n\n\xBF\xBF\xBF??\r\n\r\n\nAlex
+    Castro Mar\xED \r\n\r\n\nJose Lu\xEDs P\xE9rez Aza\xF1a\r\n\r\n\n\r\n\n\n\xBF\xBF\xBF??\r\n\r\n\n\xBF\xBF\xBF??\r\n\r\n\r\n\n?\xBF?\xBF\r\n\r\n\nMOM\r\nDAD\r\nMY
+    FAMILY\r\nXAVI\r\nRAMON\r\nNOKOAN\r\nCARRETERO \r\nMELISA\r\nM\xD3NICA\r\nASEPRITE\r\nMIKE\n\r\n\r\n?\r\n?\r\n?\r\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 93.81738, y: 0, z: -322.97656, w: -5192.3125}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1231064602
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231064598}
+  m_CullTransparentMesh: 1
 --- !u!1 &1309710804
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,3 +1137,4 @@ SceneRoots:
   - {fileID: 517481573}
   - {fileID: 920823424}
   - {fileID: 1309710807}
+  - {fileID: 970149571}

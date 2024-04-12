@@ -2901,6 +2901,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1944230436}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1001 &657535450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 98.072365
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966301481350935745, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004765049164244348, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
+      propertyPath: m_Name
+      value: HabibFormiga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17210b51e000c0549bf9da573d5c71e0, type: 3}
 --- !u!1 &683592457
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,6 +3717,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &808709908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1242804835320526539, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: carrilActualFormiga
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 82.024475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100.2182
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732160476264757171, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764294191243233443, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
+      propertyPath: m_Name
+      value: FurmigaCuajada
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
 --- !u!1 &813632566
 GameObject:
   m_ObjectHideFlags: 0
@@ -9292,3 +9410,5 @@ SceneRoots:
   - {fileID: 1955506079}
   - {fileID: 273138134}
   - {fileID: 1698986194}
+  - {fileID: 808709908}
+  - {fileID: 657535450}
