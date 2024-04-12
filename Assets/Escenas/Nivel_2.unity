@@ -18389,7 +18389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furmiga: {fileID: 5764294191243233443, guid: a6a8b75ff2c788b418365541d5681ee5, type: 3}
-  oleadas: 0400000006000000
+  oleadas: 0100000001000000
 --- !u!1 &1231022748
 GameObject:
   m_ObjectHideFlags: 0

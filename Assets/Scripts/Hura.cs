@@ -42,6 +42,8 @@ public class Hura : MonoBehaviour
     protected GameObject[] michis;
 
     protected int gatoBotiquin;
+    [SerializeField]
+    protected int curaGato;
 
     [Space]
     [Space]
@@ -108,6 +110,7 @@ public class Hura : MonoBehaviour
 
     void Start()
     {
+        curaGato = 20;
         bloquearParry = false;
         gatoBotiquin = -1;
 
@@ -300,13 +303,13 @@ public class Hura : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            vida = +100;
+            vida = vidaMaxima;
             barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
         }
         if(Input.GetKeyDown(KeyCode.N))
         {
-            vida = -20;
-            barraDeVida.GetComponent<Image>().fillAmount = vida;
+            vida = vida-20;
+            barraDeVida.GetComponent<Image>().fillAmount = vida/100;
         }
 
         if (estoyMuerto == false)
@@ -333,6 +336,13 @@ public class Hura : MonoBehaviour
                 michis[gatoBotiquin].SetActive(false);
 
                 gatoBotiquin=gatoBotiquin-1;
+                vida = vida + curaGato;
+                if (vida > vidaMaxima)
+                {
+                    vida = vidaMaxima;
+                }
+                barraDeVida.GetComponent<Animator>().SetTrigger("RecargaGato");
+                barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
             }
             
            
@@ -376,14 +386,17 @@ public class Hura : MonoBehaviour
         
         if (estoyMuerto == false && General.instance.GetParryHura()==false)
         {
+
             CombatManager.instance.SetBloquearPorMamporro(true);
             CombatManager.instance.SetPuederecibirInput(false);
             this.gameObject.transform.GetChild(0).GetComponent<Animator>().ResetTrigger("finMamporro");
             Invoke("DesbloquearPorMamporro", tiempoBloqueoMamporro);
             vida = vida - hostia;
             this.gameObject.transform.GetChild(0).GetComponent<Animator>().SetTrigger("mamporro");
+            barraDeVida.GetComponent<Animator>().SetTrigger("EfectoPupa");
             //barraDeVida.GetComponent<Slider>().value = vida;
             barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
+            
             if (vida < 0)
             {
                 //Destroy(this.gameObject);
@@ -446,6 +459,7 @@ public class Hura : MonoBehaviour
             }
             Debug.Log("mi mida es" + vida);
             Destroy(other.gameObject);
+            barraDeVida.GetComponent<Animator>().SetTrigger("RecargaGato");
             barraDeVida.GetComponent<Image>().fillAmount = vida / 100;
             //hay que hacer que cuand ocolisiones con la barricada se desactive el scrip para poder acceder a la lista de los enemigos y mirar cuando se han muerto para poder acctivarse para poder romperla.
         }
