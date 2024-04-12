@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movimiento: 0.5
+  carrilActualFormiga: 0
 --- !u!114 &1055968202745791797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
   vidaEnemigo: 3
   rango: 0
   movimiento: 0
+  sangreFormiga: {fileID: 8067042052782125486, guid: 641320b3cb309c947963803156251a19, type: 3}
 --- !u!212 &3302094289090161439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -451,6 +453,7 @@ MonoBehaviour:
   vidaEnemigo: 3
   rango: 0.5
   movimiento: 0
+  sangreFormiga: {fileID: 8067042052782125486, guid: 641320b3cb309c947963803156251a19, type: 3}
 --- !u!61 &636556259685557680
 BoxCollider2D:
   m_ObjectHideFlags: 0

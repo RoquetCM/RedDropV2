@@ -28,11 +28,11 @@ public class General : MonoBehaviour
     }
     public void SetContadorFormigasBarricada(int b)
     {
-        golpesBarricada = b;
+        contadorFormigasBarricada = b;
     }
     public int GetContadorFormigasBarricada()
     {
-        return golpesBarricada;
+        return contadorFormigasBarricada;
     }
 
     public void SetOleadasController(int[] l)

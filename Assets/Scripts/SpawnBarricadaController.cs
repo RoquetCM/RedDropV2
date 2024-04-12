@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class SpawnBarricadaController : MonoBehaviour
@@ -31,42 +32,51 @@ public class SpawnBarricadaController : MonoBehaviour
     }
     public void SpawnearBarricadaFurmigaRandom()
     {
+        Debug.Log("furmigas:" + General.instance.GetContadorFormigasBarricada());
+        Debug.Log("oleada:" + General.instance.GetOleadaActual());
+
         if (General.instance.GetContadorFormigasBarricada() == 0)
         {
             General.instance.SetOleadaActual(General.instance.GetOleadaActual() + 1);
-            General.instance.SetContadorFormigasBarricada(oleadas[General.instance.GetOleadaActual()]);
             
-            if (heCreadoFormiga == false)
+
+            if(General.instance.GetOleadaActual()>= oleadas.Length)
             {
-                heCreadoFormiga = true;
-                // esta variable tine ahora un valor de 0 a 2 (es decir el numero de carriles que hay).
-                carrilAleatorio = Random.Range(0, this.gameObject.transform.childCount);
-                //carrilAleatorio = 3;
-                carrilAleatorio2 = carrilAleatorio + 1;
-
-                //Si a salido el ultimo carril hacemos que valla al carril 0
-                if (carrilAleatorio == this.gameObject.transform.childCount - 1)
-                {
-                    carrilAleatorio2 = 0;
-                    carrilAleatorio3 = 1;
-                }
-                if (carrilAleatorio == this.gameObject.transform.childCount - 2)
-                {
-                    carrilAleatorio2 = this.gameObject.transform.childCount - 1;
-                    carrilAleatorio3 = 0;
-
-                }
-
-                // creacion de un clon de formiga, en un punto de spawn.
-                furmigaClon = (GameObject)Instantiate(furmiga, this.gameObject.transform.GetChild(carrilAleatorio).transform.position, Quaternion.identity);
-                furmigaClon.AddComponent<FormigaDeBarricada>();
-
-                furmigaClon = (GameObject)Instantiate(furmiga, this.gameObject.transform.GetChild(carrilAleatorio2).transform.position, Quaternion.identity);
-                furmigaClon.AddComponent<FormigaDeBarricada>();
-
-                furmigaClon = (GameObject)Instantiate(furmiga, this.gameObject.transform.GetChild(carrilAleatorio3).transform.position, Quaternion.identity);
-                furmigaClon.AddComponent<FormigaDeBarricada>();
+                this.transform.parent.transform.GetChild(1).GetComponent<Barricada>().DesbloquearGolpesBarricada();
+                this.transform.parent.transform.GetChild(2).GetComponent<Barricada>().DesbloquearGolpesBarricada();
             }
+            else
+            {
+                General.instance.SetContadorFormigasBarricada(oleadas[General.instance.GetOleadaActual()]);
+                //Debug.Log("inicio" + General.instance.GetContadorFormigasBarricada());
+
+                carrilAleatorio = Random.Range(0, this.gameObject.transform.childCount);
+               // Debug.Log("carril aleatorio" + carrilAleatorio);
+
+
+                for (int i = 0; i < General.instance.GetContadorFormigasBarricada(); i++)
+                {
+                    carrilAleatorio = carrilAleatorio + 1;
+                    if (carrilAleatorio == 6)
+                    {
+                        carrilAleatorio = 0;
+                    }
+
+                    furmigaClon = (GameObject)Instantiate(furmiga, this.gameObject.transform.GetChild(carrilAleatorio).transform.position, Quaternion.identity);
+                    furmigaClon.AddComponent<FormigaDeBarricada>();
+                    if((carrilAleatorio == 0) || (carrilAleatorio == 1) || (carrilAleatorio == 2))
+                    {
+                        //this.gameObject.transform.GetChild(0)|| this.gameObject.transform.GetChild(1)|| this.gameObject.transform.GetChild(2)
+                        furmigaClon.GetComponent<FormigaCuajada>().SetCarrilActualFormiga(0);
+                    }
+                    else
+                    {
+                        furmigaClon.GetComponent<FormigaCuajada>().SetCarrilActualFormiga(1);
+                    }
+
+                }
+            }
+                
         }
         
 

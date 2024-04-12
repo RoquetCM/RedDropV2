@@ -94,9 +94,9 @@ public class Hura : MonoBehaviour
 
     protected Vector3 posicionInicialSpawner;//Posicion del Spawner 
 
-    [SerializeField]
+    
     protected GameObject objetoDesactivarI;
-    [SerializeField]
+    
     protected GameObject objetoDesactivarD;
 
     //protected string email="javisoftworld@gmail.com";
@@ -105,8 +105,7 @@ public class Hura : MonoBehaviour
     void Start()
     {
         bloquearParry = false;
-        objetoDesactivarD.SetActive(true);
-        objetoDesactivarI.SetActive(true);
+    
 
         CombatManager.instance.SetPermitirMovimiento(false);
         estoyMuerto = false;
@@ -304,6 +303,7 @@ public class Hura : MonoBehaviour
                 Movimiento();
                 CambioDeCarril();
                 Parry();
+                
             }
             if (CombatManager.instance.GetBloquearPorMamporro() == false)
             {
@@ -327,15 +327,19 @@ public class Hura : MonoBehaviour
         }
         if (other.gameObject.tag == "Barricada")
         {
+            objetoDesactivarI = other.gameObject.transform.parent.transform.GetChild(2).gameObject;
+            objetoDesactivarD = other.gameObject.transform.parent.transform.GetChild(1).gameObject;
+
             //Una vez choque contra la baaricada esta hara que spwnen los enemigos.
             other.gameObject.GetComponent<SpawnBarricadaController>().SpawnearBarricadaFurmigaRandom();
             General.instance.SetGolpesBarricada(5);
+
 
         }
 
         if (other.gameObject.tag == "FormigaCuajada")
         {
-
+            
             Hostion(20);
         }
      
@@ -473,4 +477,5 @@ public class Hura : MonoBehaviour
             
         }
     }
+    
 }

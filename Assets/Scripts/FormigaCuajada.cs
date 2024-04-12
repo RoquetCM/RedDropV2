@@ -11,6 +11,10 @@ public class FormigaCuajada: MonoBehaviour
     protected float movimiento;//velocidad de desplazamiento
     protected Vector3 posPlayer;
 
+    [SerializeField]
+    protected int carrilActualFormiga;
+    protected int carrilDestinoFormiga;
+
 
 
     // Start is called before the first frame update
@@ -25,8 +29,19 @@ public class FormigaCuajada: MonoBehaviour
 
 
     // Update is called once per frame
+
+    public int GetCarrilActualFormiga()
+    {
+        return this.carrilActualFormiga;
+    }
+    public void SetCarrilActualFormiga(int c)
+    {
+         this.carrilActualFormiga=c;
+    }
+
     void Update()
     {
+
         posPlayer = new Vector3(player.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.left);

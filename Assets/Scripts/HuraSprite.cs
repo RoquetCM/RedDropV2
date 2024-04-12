@@ -51,9 +51,8 @@ public class HuraSprite : MonoBehaviour
                 if (c.gameObject.tag == "FormigaCuajada")
                 {
                     //Debug.Log("Dara a FomigaCuajada");
-                    c.gameObject.GetComponent<FormigaCuajada2D>().DanioEnemigo(danioGnerado);
-                    sangreFormigaClon = (GameObject)Instantiate(sangreFormiga, c.gameObject.transform.position, Quaternion.identity);
-                    Destroy(sangreFormigaClon.gameObject, 0.5f);
+                    c.gameObject.GetComponent<FormigaCuajada2D>().DanioEnemigo(danioGnerado, carrilActual);
+                    
                 }
                 if (c.gameObject.tag == "FormigaTactica")
                 {

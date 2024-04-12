@@ -23,40 +23,48 @@ public class Barricada : MonoBehaviour
         
 
         golpesBarricada = 5;
-        bloquearGolpeBarricada = false;
+        bloquearGolpeBarricada = true;
     }
     public void DesbloquearGolpesBarricada()
     {
         bloquearGolpeBarricada = false;
-
+        Debug.Log("estoy aqui????");
     }
     public void Golpes(int carrilActual)
     {
-        if((this.gameObject.tag=="BarricadaD" && carrilActual==0) || (this.gameObject.tag == "BarricadaI" && carrilActual == 1))
+        if (bloquearGolpeBarricada == false)
         {
-            golpesTrasGolpe = General.instance.GetGolpesBarricada() - 1;
-            General.instance.SetGolpesBarricada(golpesTrasGolpe);
-            Debug.Log("golpesBarricada" + golpesTrasGolpe);
 
-            if (General.instance.GetGolpesBarricada() == 3)
+            if ((this.gameObject.tag == "BarricadaD" && carrilActual == 0) || (this.gameObject.tag == "BarricadaI" && carrilActual == 1))
             {
-                this.transform.parent.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = fases[0];
-            }
-           
-            else if (General.instance.GetGolpesBarricada() == 1)
-            {
-                this.transform.parent.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = fases[1 ];
-            }
+                golpesTrasGolpe = General.instance.GetGolpesBarricada() - 1;
+                General.instance.SetGolpesBarricada(golpesTrasGolpe);
+                Debug.Log("golpesBarricada" + golpesTrasGolpe);
 
-            else if (General.instance.GetGolpesBarricada() == 0)
-            {
-                General.instance.SetGolpesBarricada(0);
-                golpesTrasGolpe = 5;
-                Destroy(this.transform.parent.gameObject);
-                
+                if (General.instance.GetGolpesBarricada() == 3)
+                {
+                    Debug.Log("ayuda" + golpesTrasGolpe);
+                    this.transform.parent.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = fases[0];
+                }
+
+                else if (General.instance.GetGolpesBarricada() == 1)
+                {
+                    this.transform.parent.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = fases[1];
+                }
+
+                else if (General.instance.GetGolpesBarricada() == 0)
+                {
+                    General.instance.SetOleadaActual(-1);
+                    General.instance.SetContadorFormigasBarricada(0);
+                    General.instance.SetGolpesBarricada(0);
+                    golpesTrasGolpe = 5;
+                    Destroy(this.transform.parent.gameObject);
+
+                }
+
             }
-       
         }
+        
     }
     // Update is called once per frame
     void Update()

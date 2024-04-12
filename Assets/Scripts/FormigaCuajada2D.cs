@@ -7,7 +7,11 @@ public class FormigaCuajada2D : Enemigo
    protected bool pupa;
     protected GameObject hura;
 
-   ItemDrop items;
+    [SerializeField]
+    protected GameObject sangreFormiga;
+    protected GameObject sangreFormigaClon;
+
+    ItemDrop items;
 
     private void Awake()
     {
@@ -32,17 +36,20 @@ public class FormigaCuajada2D : Enemigo
             Heridou();
         }
     }
-    public void DanioEnemigo(int danio)
+    public void DanioEnemigo(int danio, int carril)
     {
         
-       // if (CombatManagerFormiga.instance.GetBloquearPorParry()== false)
+        if (this.gameObject.transform.parent.GetComponent<FormigaCuajada>().GetCarrilActualFormiga()==carril)
         {
+            sangreFormigaClon = (GameObject)Instantiate(sangreFormiga, this.gameObject.transform.parent.transform.GetChild(0).gameObject.transform.position, Quaternion.identity);
+            Destroy(sangreFormigaClon.gameObject, 0.5f);
             vidaEnemigo = vidaEnemigo - danio;
             pupa = true;
-            Debug.Log("daño enemigo"+vidaEnemigo);
+            //Debug.Log("daño enemigo"+vidaEnemigo);
             muerte();
             Heridou();
             Perseguir();
+            
         }
        
     }
@@ -115,8 +122,17 @@ public class FormigaCuajada2D : Enemigo
 
     public void muerte()
     {
+
         if (vidaEnemigo <= 0)
         {
+            
+            if (this.transform.parent.GetComponent<FormigaDeBarricada>())
+            {
+                //Debug.Log("antes" + General.instance.GetContadorFormigasBarricada());
+                General.instance.SetContadorFormigasBarricada(General.instance.GetContadorFormigasBarricada()-1);
+                //Debug.Log("depues" + General.instance.GetContadorFormigasBarricada());
+                Destroy(this.transform.parent.GetComponent<FormigaDeBarricada>());
+            }
             this.gameObject.GetComponent<Animator>().ResetTrigger("herido");
             this.gameObject.GetComponent<Animator>().ResetTrigger("ataque1");
             this.gameObject.GetComponent<Animator>().ResetTrigger("ataque2");
